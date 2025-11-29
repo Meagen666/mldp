@@ -56,10 +56,6 @@ st.markdown("""
         margin: 1rem 0;
         border: 2px solid #F2BAC9;
     }
-    div.stButton {
-    display: flex !important;
-    justify-content: center !important;
-    }
     .stButton > button {
         background: #bad7f2 !important;
         border: 3px solid #f2bac9 !important;
@@ -736,13 +732,24 @@ def main():
         st.session_state.prediction_result = None
     if 'prediction_confidence' not in st.session_state:
         st.session_state.prediction_confidence = None
-    
+    '''
     with tab1:
         st.markdown("##  Prediction")
 
         values = create_input_form("prediction")
         
         if st.button("Predict S/D", type="primary"):
+            with st.spinner("Analyzing health data..."):'''
+    with tab1:
+        st.markdown("##  Prediction")
+
+        values = create_input_form("prediction")
+
+        col1, col2, col3 = st.columns([1, 1, 1])
+        with col2:
+            predict_clicked = st.button(" Predict", type="primary")
+
+        if predict_clicked:
             with st.spinner("Analyzing health data..."):
                 time.sleep(1)
                 
