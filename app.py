@@ -56,6 +56,10 @@ st.markdown("""
         margin: 1rem 0;
         border: 2px solid #F2BAC9;
     }
+    div.stButton {
+    display: flex !important;
+    justify-content: center !important;
+    }
     .stButton > button {
         background: #bad7f2 !important;
         border: 3px solid #f2bac9 !important;
