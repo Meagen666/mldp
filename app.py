@@ -742,7 +742,7 @@ def main():
 
         values = create_input_form("prediction")
         
-        if st.button(" Predict", type="primary"):
+        if st.button("Predict S/D", type="primary"):
             with st.spinner("Analyzing health data..."):
                 time.sleep(1)
                 
