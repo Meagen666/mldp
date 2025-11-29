@@ -732,14 +732,14 @@ def main():
         st.session_state.prediction_result = None
     if 'prediction_confidence' not in st.session_state:
         st.session_state.prediction_confidence = None
-    '''
-    with tab1:
-        st.markdown("##  Prediction")
+    
+    #with tab1:
+        #st.markdown("##  Prediction")
 
-        values = create_input_form("prediction")
+        #values = create_input_form("prediction")
         
-        if st.button("Predict S/D", type="primary"):
-            with st.spinner("Analyzing health data..."):'''
+        #if st.button("Predict S/D", type="primary"):
+            #with st.spinner("Analyzing health data..."):'''
     with tab1:
         st.markdown("##  Prediction")
 
